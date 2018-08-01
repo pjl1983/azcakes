@@ -1,0 +1,31 @@
+<nav id="navbar" class="navbar navbar-light animated slideInDown">
+  <div class="row">
+    <div class="col">
+      <i class="fas fa-bars" (click)="sideNavbar = !sideNavbar"></i>
+    </div>
+    <div class="col">
+      <img class="navbar_logo" src="./../../../assets/logos/logo_name_only.png">
+    </div>
+  </div>
+</nav>
+
+<div id="mySidenav" class="side_nav" [ngClass]="sideNavbar ? 'open' : 'closed'">
+  <a href="javascript:void(0)" class="closebtn" (click)="sideNavbar = !sideNavbar">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+  <div class="side_nav_footer">
+    <div class="social_row">
+      <div class="side_nav_social_container">
+        <i class="fab fa-facebook-f side_nav_social"></i>
+      </div>
+      <div class="side_nav_social_container">
+        <i class="fab fa-instagram side_nav_social"></i>
+      </div>
+      <div class="side_nav_social_container">
+        <i class="fab fa-twitter side_nav_social"></i>
+      </div>
+    </div>
+  </div>
+</div>
