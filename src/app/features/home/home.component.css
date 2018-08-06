@@ -96,8 +96,51 @@ blockquote {
   color: #9c6a77;
 }
 
+.image_container {
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 300ms ease-in-out;
+}
+
+.image_container:after {
+  content: '\A';
+  position: absolute;
+  width: 100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.image_container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
+
+.image_container:hover:after {
+  opacity: 1;
+}
+
 .gallery_image {
-  width: 200px;
+  width: 100%;
+}
+
+.image_title {
+  position: relative;
+  bottom: 200px;
+  color: white;
+  font-size: 40px;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.image_container:hover + .image_title {
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 575px) {
