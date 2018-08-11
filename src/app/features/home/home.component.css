@@ -4,6 +4,20 @@
   opacity: .75;
 }
 
+.carousel {
+  margin-top: 72px;
+}
+
+.carousel_img {
+  display: block;
+  width: 100vw;
+}
+
+.arrow {
+  color: #ffffff;
+  font-size: 50px;
+}
+
 blockquote {
   border-left: none
 }
@@ -155,8 +169,8 @@ blockquote {
 }
 
 @media screen and (max-width: 575px) {
-  .main_background {
-    padding-top: 60px;
+  .arrow {
+    font-size: 25px;
   }
 
   .quote-text {
@@ -171,6 +185,35 @@ blockquote {
     width: 80%;
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .gallery_title {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .gallery {
+    padding-bottom: 0px;
+  }
+
+  .image_container {
+    height: 346px;
+  }
+
+  .image_title {
+    bottom: 200px;
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .title_container {
+    border-bottom: none;
+    line-height: 1px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
   }
 }
 
