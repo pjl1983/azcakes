@@ -1,16 +1,18 @@
 .main_background {
   width: 100%;
   height: 100%;
-  opacity: .75;
 }
 
 .carousel {
+  width: 100%;
   margin-top: 72px;
 }
 
 .carousel_img {
   display: block;
-  width: 100vw;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .arrow {
@@ -38,8 +40,8 @@ blockquote {
   background-color: transparent;
   color: #9c6a77;
   width: 50%;
-  padding-top: 50px;
-  padding-bottom: 75px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 .quotation-mark {
@@ -98,7 +100,7 @@ blockquote {
 }
 
 .gallery {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -169,6 +171,14 @@ blockquote {
 }
 
 @media screen and (max-width: 575px) {
+  .main_background {
+    margin-top: 72px;
+  }
+
+  .carousel {
+    margin-top: 72px;
+  }
+
   .arrow {
     font-size: 25px;
   }
