@@ -5,7 +5,6 @@ import { HeaderModule } from './features/header/header.module';
 import { FooterModule } from './features/footer/footer.module';
 import { HomeModule } from './features/home/home.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +13,7 @@ import { HomeModule } from './features/home/home.module';
     BrowserModule,
     HeaderModule,
     FooterModule,
-    HomeModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
