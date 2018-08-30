@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { WOW } from 'wowjs';
+import { WOW } from 'wowjs';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,11 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    // new WOW().init();
+    const wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      live: true
+    });
   }
 }
