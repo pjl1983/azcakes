@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { MapModule } from '../../shared/map/map.module';
 import { LightboxModule } from '../lightbox/lightbox.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule,
     MapModule,
-    LightboxModule
+    LightboxModule,
+    SharedModule
   ],
   declarations: [HomeComponent],
   exports: [HomeComponent, MapModule, LightboxModule]
