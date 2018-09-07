@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-animation',
@@ -22,9 +22,10 @@ export class ScrollAnimationComponent implements OnInit {
 
   isInViewport(elem) {
     const bounding = elem.getBoundingClientRect();
+    const element: number = bounding.bottom - ((bounding.bottom - bounding.top) / 2);
     return (
-      bounding.top >= 0 &&
-      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      element >= 0 &&
+      element <= (window.innerHeight || document.documentElement.clientHeight)
     );
   }
 
