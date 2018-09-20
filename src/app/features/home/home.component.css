@@ -79,10 +79,6 @@ blockquote {
 }
 
 @media screen and (max-width: 575px) {
-  .main_background {
-    margin-top: 72px;
-  }
-
   .quote-text {
     font-size: 12px;
   }

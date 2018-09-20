@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { debounceTime, map } from 'rxjs/internal/operators';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-scroll-animation',
