@@ -21,11 +21,6 @@
   min-height: 150px;
 }
 
-.carousel-control.right, .carousel-control.left {
-  background-image: none;
-  color: #ffffff;
-}
-
 .carousel-indicators li {
   border-color: #ffffff;
 }
