@@ -176,6 +176,6 @@ export class MapComponent implements OnInit {
 
       });
 
-    const marker = new google.maps.Marker({position: azCakes, map: map, icon: 'src/assets/photos/site/marker.png'});
+    const marker = new google.maps.Marker({position: azCakes, map: map, icon: './src/assets/photos/site/marker.png'});
   }
 }
