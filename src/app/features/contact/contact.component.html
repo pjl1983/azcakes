@@ -1,0 +1,71 @@
+<div class="container">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-xs-12 col-md-6">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First name">
+      </div>
+      <div class="form-group col-xs-12 col-md-6">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-xs-12 col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group col-xs-12 col-md-6">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="Subject">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-xs-12 col-md-6">
+        <div class="form-group">
+          <label for="eventTheme">Event Theme</label>
+          <select class="form-control" id="eventTheme">
+            <option selected>Choose...</option>
+            <option>Baby Shower</option>
+            <option>Wedding</option>
+            <option>Groom</option>
+            <option>Children's</option>
+            <option>3D & Novelty</option>
+            <option>Cupcakes & Cookies</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <label for="calendar">Date</label>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <input
+              class="form-control"
+              type="text"
+              id="calendar"
+              name="calendar"
+              mwlFlatpickr
+              [(ngModel)]="date"
+              [altInput]="true"
+              [convertModelValue]="true"
+              dateFormat="Y-m-dTH:i">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-row">
+      <div class="col-12 form-group">
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn button-secondary">Submit</button>
+  </form>
+</div>
