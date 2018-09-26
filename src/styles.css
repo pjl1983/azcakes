@@ -2,3 +2,51 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.button {
+  border-radius: 0px;
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.button:hover {
+  border-color: #69817e;
+  color: #69817e;
+}
+
+.button:active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #69817e;
+}
+
+.button-secondary {
+  border-radius: 0px;
+  border-color: #69817e;
+  color: #69817e;
+  background-color: transparent;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.button-secondary:hover {
+  border-color: #69817e;
+  color: #ffffff;
+  background-color: #69817e;
+}
+
+.button-secondary:active {
+  background-color: #34403f;
+  border-color: #34403f;
+  color: #ffffff;
+}

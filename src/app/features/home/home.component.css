@@ -57,27 +57,6 @@ blockquote {
   background-color: #73c3b4;
 }
 
-.button {
-  border-radius: 0px;
-  border-color: #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  box-shadow: none;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-}
-
-.button:hover {
-  border-color: #69817e;
-  color: #69817e;
-}
-
-.button:active {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  color: #69817e;
-}
-
 @media screen and (max-width: 575px) {
   .quote-text {
     font-size: 12px;
