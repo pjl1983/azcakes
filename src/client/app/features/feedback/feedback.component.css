@@ -1,0 +1,30 @@
+.feedback {
+  text-align: center;
+  background-color: #9c6a77;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feedback h2 {
+  color: #ffffff
+}
+
+.feedback h4 {
+  color: #ffffff
+}
+
+.feedback h6 {
+  color: #ffffff;
+}
+
+.carousel-inner {
+  min-height: 150px;
+}
+
+.carousel-indicators li {
+  border-color: #ffffff;
+}
+
+.carousel-indicators li.active {
+  background-color: #ffffff;
+}

@@ -1,0 +1,33 @@
+<nav id="navbar" class="navbar navbar-light animated slow" data="slideInDown">
+  <div class="navbar-brand">
+    <i class="fas fa-bars" [ngClass]="sideNavbar ? 'rotate_open' : 'rotate_closed'"
+       (click)="sideNavbar = !sideNavbar"></i>
+    <img class="navbar_logo" src="./../../../client/assets/logos/logo_name_only.png">
+  </div>
+  <div class="contact_info">
+    Mon-Fri 9am to 5pm<br>
+    480.502.7646
+  </div>
+</nav>
+
+<div id="mySidenav" class="side_nav" [ngClass]="sideNavbar ? 'open' : 'closed'">
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active" (click)="close()">Home</a></li>
+    <li><a routerLink="/order" routerLinkActive="active" (click)="close()">Ordering</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active" (click)="close()">Contact Us</a></li>
+  </ul>
+  <div class="side_nav_footer">
+    <div class="col-4">
+      <i class="fab fa-facebook-f side_nav_social"></i>
+    </div>
+
+    <div class="col-4">
+      <i class="fab fa-instagram side_nav_social"></i>
+    </div>
+
+    <div class="col-4">
+      <i class="fab fa-twitter side_nav_social"></i>
+    </div>
+  </div>
+</div>

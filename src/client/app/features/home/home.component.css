@@ -1,0 +1,75 @@
+.main_background {
+  width: 100%;
+  height: 100%;
+}
+
+blockquote {
+  border-left: none
+}
+
+.quote_container {
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.quote-badge {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-box {
+  overflow: hidden;
+  border-radius: 17px;
+  background-color: transparent;
+  color: #9c6a77;
+  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.quotation-mark {
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 100px;
+  color: #9c6a77;
+}
+
+.quote-text {
+  font-size: 19px;
+  margin-top: -65px;
+}
+
+.option_container {
+  height: 475px;
+  min-height: 475px;
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.blue_green_light {
+  background-color: #79cdbd;
+}
+
+.blue_green_dark {
+  background-color: #73c3b4;
+}
+
+@media screen and (max-width: 575px) {
+  .quote-text {
+    font-size: 12px;
+  }
+
+  .quotation-mark {
+    font-size: 65px;
+  }
+
+  .quote-box {
+    width: 80%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
