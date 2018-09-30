@@ -68,6 +68,18 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="btn button-secondary">Submit</button>
+
+    <div class="mb-4">
+      <ngx-recaptcha2
+        [siteKey]="recaptchaSiteKey"
+        [size]="'Normal'"
+        [hl]="'em'"
+        [theme]="'Light'"
+        [type]="'Image'"
+        formControlName="recaptcha" required>
+      </ngx-recaptcha2>
+    </div>
+
+    <button type="submit" class="btn button-secondary" [disabled]="contact.invalid">Submit</button>
   </form>
 </div>

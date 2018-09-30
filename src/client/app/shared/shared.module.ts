@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from '../core/services/contact.service';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ContactService } from '../core/services/contact.service';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    FlatpickrModule
+    FlatpickrModule,
+    NgxCaptchaModule
   ],
   exports: [
     AppRoutingModule,
@@ -24,7 +26,8 @@ import { ContactService } from '../core/services/contact.service';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    FlatpickrModule
+    FlatpickrModule,
+    NgxCaptchaModule
   ],
   providers: [ContactService],
   bootstrap: []

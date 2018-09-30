@@ -6,4 +6,5 @@ export interface ContactModel {
   message: string;
   subject: string;
   theme: string;
+  recaptcha: string;
 }

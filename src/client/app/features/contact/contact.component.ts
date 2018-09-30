@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactModel } from '../../core/models/contact.model';
 import { ContactService } from '../../core/services/contact.service';
+import { environment } from '../../../../environments/environment';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,8 +11,8 @@ import { ContactService } from '../../core/services/contact.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  date: Date = new Date();
   contact: FormGroup;
+  recaptchaSiteKey = environment.recaptchaSiteKey;
 
   constructor(private contactService: ContactService) {
   }
@@ -23,7 +25,8 @@ export class ContactComponent implements OnInit {
       'subject': new FormControl(''),
       'theme': new FormControl(''),
       'date': new FormControl(new Date()),
-      'message': new FormControl('')
+      'message': new FormControl(''),
+      'recaptcha': new FormControl('', Validators.required)
     });
   }
 
@@ -31,5 +34,14 @@ export class ContactComponent implements OnInit {
     this.contactService.submitContactInfo(contact).subscribe(res => {
       console.log(res);
     });
+  }
+  handleExpire() {
+    console.log('expired');
+  }
+  handleLoad() {
+    console.log('Load');
+  }
+  handleSuccess(e) {
+    console.log(e);
   }
 }
