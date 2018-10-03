@@ -12,7 +12,11 @@ import { environment } from '../../../../environments/environment';
 })
 export class ContactComponent implements OnInit {
   contact: FormGroup;
-  recaptchaSiteKey = environment.recaptchaSiteKey;
+  captchaSiteKey = environment.captchaSiteKey;
+  captchaIsLoaded: boolean;
+  captchaSuccess: boolean;
+  captchaResponse: string;
+  captchaIsExpired: boolean;
 
   constructor(private contactService: ContactService) {
   }
@@ -35,13 +39,20 @@ export class ContactComponent implements OnInit {
       console.log(res);
     });
   }
+
   handleExpire() {
-    console.log('expired');
+    this.captchaSuccess = false;
+    this.captchaIsExpired = true;
   }
+
   handleLoad() {
-    console.log('Load');
+    this.captchaIsLoaded = true;
+    this.captchaIsExpired = false;
   }
-  handleSuccess(e) {
-    console.log(e);
+
+  handleSuccess(captchaResponse: string) {
+    this.captchaSuccess = true;
+    this.captchaResponse = captchaResponse;
+    this.captchaIsExpired = false;
   }
 }
