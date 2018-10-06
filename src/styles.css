@@ -33,21 +33,44 @@ body {
 
 .button-secondary {
   border-radius: 0px;
-  border-color: #69817e;
-  color: #69817e;
+  border-color: #9c6a77;
+  color: #9c6a77;
   background-color: transparent;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
 .button-secondary:hover {
-  border-color: #69817e;
+  border-color: #9c6a77;
   color: #ffffff;
-  background-color: #69817e;
+  background-color: #9c6a77;
 }
 
 .button-secondary:active {
-  background-color: #34403f;
-  border-color: #34403f;
+  background-color: #9c6a77;
+  border-color: #9c6a77;
   color: #ffffff;
+}
+
+.title_container {
+  border-bottom: 1px solid #eeeeee;
+  overflow: visible;
+  line-height: 17px;
+  height: 9px;
+  margin: 30px auto 75px;
+  text-align: center;
+  width: 97.9166666666666667%;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  color: #9c6a77;
+  background-color: #ffffff;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
