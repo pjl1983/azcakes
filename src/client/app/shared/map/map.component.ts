@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {} from '@types/googlemaps';
 
 
 @Component({
@@ -177,6 +176,6 @@ export class MapComponent implements OnInit {
 
       });
 
-    const marker = new google.maps.Marker({position: azCakes, map: map, icon: '../../../client/assets/photos/site/marker.png'});
+    const marker = new google.maps.Marker({position: azCakes, map: map, icon: '../../../client/assets/icons/marker.png'});
   }
 }
