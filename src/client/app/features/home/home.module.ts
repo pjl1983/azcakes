@@ -5,6 +5,7 @@ import { IngredientsModule } from '../ingredients/ingredients.module';
 import { MapModule } from '../../shared/map/map.module';
 import { SharedModule } from '../../shared/shared.module';
 
+
 @NgModule({
   imports: [
     GalleryModule,
