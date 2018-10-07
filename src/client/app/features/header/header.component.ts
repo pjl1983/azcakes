@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-  sideNavbar: boolean;
+  url: string;
+  toggle: boolean;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
-  }
-
-  close() {
-    this.sideNavbar = false;
+    this.router.events.pipe(
+      filter((event: Event) => event instanceof NavigationEnd)
+    ).subscribe((route: any) => {
+      this.url = route.url;
+    });
   }
 }

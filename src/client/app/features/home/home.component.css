@@ -40,10 +40,8 @@ blockquote {
 }
 
 .option_container {
-  height: 475px;
-  min-height: 475px;
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 25px;
   text-align: center;
   color: #ffffff;
   font-size: 35px;

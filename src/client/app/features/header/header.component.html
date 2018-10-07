@@ -1,33 +1,31 @@
-<nav id="navbar" class="navbar navbar-light animated slow" data="slideInDown">
-  <div class="navbar-brand">
-    <i class="fas fa-bars" [ngClass]="sideNavbar ? 'rotate_open' : 'rotate_closed'"
-       (click)="sideNavbar = !sideNavbar"></i>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" routerLink="/home">
     <img class="navbar_logo" src="./../../../client/assets/logos/logo_name_only.png">
-  </div>
-  <div class="contact_info">
-    Mon-Fri 9am to 5pm<br>
-    480.502.7646
+  </a>
+  <button class="navbar-toggler" type="button" (click)="toggle = !toggle" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" [ngClass]="toggle ? 'rotate_open' : 'rotate_closed'"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" [ngClass]="{'active' : url === '/home'}">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : url === '/order'}">
+        <a class="nav-link" routerLink="/order">Ordering</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : url === '/gallery'}">
+        <a class="nav-link" routerLink="/gallery">Image Gallery</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : url === '/contact'}">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <div class="contact_info text-muted">
+        Mon-Fri 9am to 5pm<br>
+        480.502.7646
+      </div>
+    </span>
   </div>
 </nav>
-
-<div id="mySidenav" class="side_nav" [ngClass]="sideNavbar ? 'open' : 'closed'">
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active" (click)="close()">Home</a></li>
-    <li><a routerLink="/order" routerLinkActive="active" (click)="close()">Ordering</a></li>
-    <li><a routerLink="/gallery" routerLinkActive="active" (click)="close()">Gallery</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active" (click)="close()">Contact Us</a></li>
-  </ul>
-  <div class="side_nav_footer">
-    <div class="col-4">
-      <i class="fab fa-facebook-f side_nav_social"></i>
-    </div>
-
-    <div class="col-4">
-      <i class="fab fa-instagram side_nav_social"></i>
-    </div>
-
-    <div class="col-4">
-      <i class="fab fa-twitter side_nav_social"></i>
-    </div>
-  </div>
-</div>

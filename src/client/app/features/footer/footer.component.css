@@ -1,16 +1,19 @@
 .footer_container {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  border-top: 1px solid #ebebeb;
-  background-color: #f6f6f6;
+  background-color: #f8f9fa;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 a {
-  color: #9c6a77;
+  color: #73c3b4;
 }
 
 .fas {
-  color: #9c6a77;
+  color: #79cdbd;
+}
+
+.cake-logo {
+  float: right;
 }
 
 address {
@@ -41,7 +44,7 @@ img {
   height: 200px;
 }
 
-.footer_text{
+.footer_text {
   padding-top: 40px;
 }
 
@@ -49,7 +52,16 @@ img {
   padding-left: 15px;
 }
 
+.footer_copyright {
+  background-color: #343a40;
+  color: #dee2e6;
+}
+
 @media screen and (max-width: 575px) {
+  .cake-logo {
+    float: inherit;
+  }
+
   .column_container {
     text-align: center;
   }
