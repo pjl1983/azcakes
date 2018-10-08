@@ -68,6 +68,7 @@
 @media screen and (max-width: 575px) {
   .contact_info {
     text-align: left;
+    margin-top: 20px;
   }
 }
 
