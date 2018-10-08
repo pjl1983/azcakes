@@ -20,6 +20,8 @@
   height: 250px;
   width: auto;
   border-radius: 50%;
+  border: solid 3px #e0e0e0;
+  margin: 3px;
 }
 
 @media screen and (max-width: 575px) {
