@@ -9,16 +9,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/home'}">
-        <a class="nav-link" routerLink="/home">Home</a>
+        <a class="nav-link" routerLink="/home" (click)="toggle = !toggle">Home</a>
       </li>
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/order'}">
-        <a class="nav-link" routerLink="/order">Ordering</a>
+        <a class="nav-link" routerLink="/order" (click)="toggle = !toggle">Ordering</a>
       </li>
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/gallery'}">
-        <a class="nav-link" routerLink="/gallery">Image Gallery</a>
+        <a class="nav-link" routerLink="/gallery" (click)="toggle = !toggle">Image Gallery</a>
       </li>
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/contact'}">
-        <a class="nav-link" routerLink="/contact">Contact</a>
+        <a class="nav-link" routerLink="/contact" (click)="toggle = !toggle">Contact</a>
       </li>
     </ul>
     <span class="navbar-text">
