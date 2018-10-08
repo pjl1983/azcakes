@@ -1,0 +1,33 @@
+#ingredients {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.list-group-item {
+  border: none;
+}
+
+#cupcake {
+  width: 100%
+}
+
+.card-img-top {
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  #ingredients {
+    padding-top: 50px;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}
