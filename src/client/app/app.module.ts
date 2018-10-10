@@ -10,7 +10,7 @@ import { OrderingInformationModule } from './features/ordering-information/order
 import { AppRoutingModule } from './app.routes';
 import { ContactModule } from './features/contact/contact.module';
 import { FlatpickrModule } from 'angularx-flatpickr';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { FlatpickrModule } from 'angularx-flatpickr';
     ContactModule,
     SharedModule,
     ScrollAnimationModule,
+    ScrollToModule.forRoot(),
     FlatpickrModule.forRoot()
   ],
   providers: [],

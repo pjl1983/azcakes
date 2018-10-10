@@ -7,6 +7,7 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from '../core/services/contact.service';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     FormsModule,
     ReactiveFormsModule,
     FlatpickrModule,
-    NgxCaptchaModule
+    NgxCaptchaModule,
+    ScrollToModule
   ],
   exports: [
     AppRoutingModule,
@@ -27,7 +29,8 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     FormsModule,
     ReactiveFormsModule,
     FlatpickrModule,
-    NgxCaptchaModule
+    NgxCaptchaModule,
+    ScrollToModule
   ],
   providers: [ContactService],
   bootstrap: []
