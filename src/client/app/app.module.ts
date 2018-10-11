@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app.routes';
 import { ContactModule } from './features/contact/contact.module';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { GalleryModule } from './features/gallery/gallery.module';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     FooterModule,
     HomeModule,
     OrderingInformationModule,
+    GalleryModule,
     ContactModule,
     SharedModule,
     ScrollAnimationModule,

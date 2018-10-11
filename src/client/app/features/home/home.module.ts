@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
-import { GalleryModule } from '../gallery/gallery.module';
-import { IngredientsModule } from '../ingredients/ingredients.module';
-import { MapModule } from '../../shared/map/map.module';
 import { SharedModule } from '../../shared/shared.module';
+import { FlavorsModule } from '../flavors/flavors.module';
+import { PaymentModule } from '../payment/payment.module';
+import { MapModule } from '../../shared/map/map.module';
 
 
 @NgModule({
   imports: [
-    GalleryModule,
-    IngredientsModule,
+    FlavorsModule,
+    PaymentModule,
     MapModule,
     SharedModule
   ],
   declarations: [HomeComponent],
   exports: [
     HomeComponent,
-    GalleryModule,
-    IngredientsModule,
+    FlavorsModule,
+    PaymentModule,
     MapModule
   ]
 })

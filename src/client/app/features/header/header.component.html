@@ -2,30 +2,45 @@
   <a class="navbar-brand" routerLink="/home">
     <img class="navbar_logo" src="./../../../client/assets/logos/logo_name_only.png">
   </a>
-  <button class="navbar-toggler" type="button" (click)="toggle = !toggle" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+  <button class="navbar-toggler" type="button" (click)="toggle = !toggle" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon" [ngClass]="toggle ? 'rotate_open' : 'rotate_closed'"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/home'}">
-        <a class="nav-link dropdown-toggle" (click)="toggle = !toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : url === '/home'}">
+        <a class="nav-link dropdown-toggle" (click)="toggle = !toggle" id="navbarDropdown" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Home
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a routerLink="/home" [ngx-scroll-to]="'#welcome'" [ngx-scroll-to-easing]="'easeInOutCubic'" [ngx-scroll-to-duration]="1500" class="dropdown-item">Welcome</a>
-          <a routerLink="/home" [ngx-scroll-to]="'#ingredients'" [ngx-scroll-to-easing]="'easeInOutCubic'" [ngx-scroll-to-duration]="1500" class="dropdown-item">Ingredients</a>
-          <a routerLink="/home" [ngx-scroll-to]="'#payment'" [ngx-scroll-to-easing]="'easeInOutCubic'" [ngx-scroll-to-duration]="1500" class="dropdown-item">Make a Payment</a>
+          <a routerLink="/home" [ngx-scroll-to]="'#app'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+             [ngx-scroll-to-duration]="1500" class="dropdown-item">
+            Welcome
+          </a>
+          <a routerLink="/home" [ngx-scroll-to]="'#flavors'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+             [ngx-scroll-to-duration]="1500" class="dropdown-item">
+            Flavors
+          </a>
+          <a routerLink="/home" [ngx-scroll-to]="'#payment'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+             [ngx-scroll-to-duration]="1500" [ngx-scroll-to-offset]="-75" class="dropdown-item">
+            Pay Online
+          </a>
         </div>
       </li>
 
-      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/order'}">
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : url === '/order'}">
         <a class="nav-link" routerLink="/order" (click)="toggle = !toggle">Ordering</a>
       </li>
-      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/gallery'}">
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : url === '/gallery'}">
         <a class="nav-link" routerLink="/gallery" (click)="toggle = !toggle">Image Gallery</a>
       </li>
-      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : url === '/contact'}">
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : url === '/contact'}">
         <a class="nav-link" routerLink="/contact" (click)="toggle = !toggle">Contact</a>
       </li>
     </ul>
