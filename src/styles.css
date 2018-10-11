@@ -60,12 +60,12 @@ body {
   margin: 30px auto 75px;
   text-align: center;
   width: 97.9166666666666667%;
-  text-transform: uppercase;
 }
 
 .title {
   text-align: center;
-  font-size: 60px;
+  font-size: 65px;
+  font-family: 'Dancing Script', cursive;
   font-weight: 100;
   margin-bottom: 50px;
   color: #9c6a77;
@@ -78,7 +78,7 @@ body {
 @media screen and (max-width: 575px) {
 
   .title {
-    font-size: 35px;
+    font-size: 45px;
     width: 100%;
   }
 
@@ -89,6 +89,5 @@ body {
     margin: auto;
     text-align: center;
     width: 100%;
-    text-transform: uppercase;
   }
 }

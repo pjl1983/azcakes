@@ -32,4 +32,8 @@
   .card-img-top {
     height: 150px;
   }
+
+  .title {
+    margin-bottom: 0px !important;
+  }
 }
