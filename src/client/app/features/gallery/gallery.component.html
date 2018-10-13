@@ -4,148 +4,51 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-      <div href="./../../../client/assets/photos/cakes/main/buttercream_wedding.jpeg"
-           data-toggle="lightbox"
+    <div *ngFor="let key of GalleryImageList | keys" class="col-xs-12 col-sm-6 col-md-4 text-center">
+      <div data-toggle="modal"
+           data-target="#exampleModal"
            data-gallery="wedding-gallery"
+           (click)="selection = key"
            class="image_container mb-3 animated slow" data="fadeIn">
-        <img class="gallery_image" src="./../../../client/assets/photos/cakes/main/buttercream_wedding.jpeg">
-        <span class="image_title">WEDDING</span>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-      <div href="./../../../client/assets/photos/cakes/bridal-and-baby/baby_booties.jpeg"
-           data-toggle="lightbox"
-           data-gallery="bridal-and-baby-gallery"
-           class="image_container mb-3 animated slow"
-           data="fadeInDown">
-        <img class="gallery_image" src="./../../../client/assets/photos/cakes/bridal-and-baby/baby_booties.jpeg">
-        <span class="image_title">BRIDAL & BABY</span>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-      <div href="./../../../client/assets/photos/cakes/sports/golf_ball.jpeg"
-           data-toggle="lightbox"
-           data-gallery="sports-gallery"
-           class="image_container mb-3 animated slow"
-           data="fadeInDown">
-        <img class="gallery_image" src="./../../../client/assets/photos/cakes/sports/golf_ball.jpeg">
-        <span class="image_title">SPORTS</span>
+        <img class="gallery_image" [src]="GalleryImageList[key][0]">
+        <span class="image_title">{{key}}</span>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-      <div href="./../../../client/assets/photos/cakes/birthday-girl/princess_heart_with_matching_smash.jpeg"
-           data-toggle="lightbox"
-           data-gallery="birthday-gallery"
-           class="image_container mb-3 animated slow"
-           data="fadeInDown">
-        <img class="gallery_image"
-             src="./../../../client/assets/photos/cakes/birthday-girl/princess_heart_with_matching_smash.jpeg">
-        <span class="image_title">BIRTHDAY</span>
-      </div>
-    </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-      <div href="./../../../client/assets/photos/cakes/graduation/books_and_graduation_cap.jpeg"
-           data-toggle="lightbox"
-           data-gallery="graduation-gallery"
-           class="image_container mb-3 animated slow"
-           data="fadeInDown">
-        <img class="gallery_image" src="./../../../client/assets/photos/cakes/graduation/books_and_graduation_cap.jpeg">
-        <span class="image_title">GRADUATION</span>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-      <div href="./../../../client/assets/photos/cakes/cupcakes/image_1.jpeg"
-           data-toggle="lightbox"
-           data-gallery="cupcakes-gallery"
-           class="image_container mb-3 animated slow"
-           data="fadeInDown">
-        <img class="gallery_image" src="./../../../client/assets/photos/cakes/cupcakes/image_1.jpeg">
-        <span class="image_title">CUPCAKES</span>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li *ngFor="let image of GalleryImageList[selection]; let i = index" data-target="#carouselExampleIndicators" data-slide-to="i" [ngClass]="{'active': i == 0}"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div *ngFor="let image of GalleryImageList[selection]; let i = index" class="carousel-item"
+                   [ngClass]="{'active': i == 0}">
+                <img class="d-block w-100" [src]="image" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>...</h5>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-<div style="display: none;">
-  <a href="./../../../client/assets/photos/cakes/wedding/batman.JPG" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/batman.JPG" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/birch_tree.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/birch_tree.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/bronze_copper_and_marble.JPG" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/bronze_copper_and_marble.JPG" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/buttercream_contour.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/buttercream_contour.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/gift_box_pearlized.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/gift_box_pearlized.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/gold_quilted_rosette.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/gold_quilted_rosette.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/quilted_rosette.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/quilted_rosette.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/royal_wedding.JPG" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/royal_wedding.JPG" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/rustic_tree.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/rustic_tree.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/silver_pearl.jpg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/silver_pearl.jpg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/snowflake.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/snowflake.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/tiffany_blue_square.jpg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/tiffany_blue_square.jpg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/victorian_lace_with_bow.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/victorian_lace_with_bow.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/wedding_bows.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/wedding_bows.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/western.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/western.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/western_leather.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/western_leather.jpeg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/western_with_belt_buckle.jpg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/western_with_belt_buckle.jpg" class="img-fluid">
-  </a>
-  <a href="./../../../client/assets/photos/cakes/wedding/white_rose.jpeg" data-toggle="lightbox"
-     data-gallery="wedding-gallery">
-    <img src="./../../../client/assets/photos/cakes/wedding/white_rose.jpeg" class="img-fluid">
-  </a>
-
 </div>
