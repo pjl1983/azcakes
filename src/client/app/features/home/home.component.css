@@ -71,6 +71,11 @@ blockquote {
 }
 
 @media screen and (max-width: 575px) {
+  .main_background {
+    height: 50vh;
+    width: auto;
+  }
+
   .quote-text {
     font-size: 12px;
   }
@@ -89,4 +94,3 @@ blockquote {
     padding: 25px;
   }
 }
-
