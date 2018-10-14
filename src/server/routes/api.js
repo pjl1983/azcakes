@@ -7,7 +7,7 @@ sgMail.setApiKey(process.env.SENDGRID);
 router.post('/contact', (req, res) => {
   const contact = req.body.contact;
   const msg = {
-    to: 'pjlanphar@gmail.com',
+    to: 'azcakes@mac.com',
     from: contact.email,
     subject: contact.subject,
     html: `

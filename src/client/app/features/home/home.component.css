@@ -84,5 +84,9 @@ blockquote {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+  .option_container {
+    padding: 25px;
+  }
 }
 
