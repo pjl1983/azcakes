@@ -18,8 +18,10 @@
 }
 
 .carousel-text {
-  background-color: #000000;
+  background-color: #73c3b4;
   color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 1px;
 }
 
 .carousel-text h5 {
@@ -44,6 +46,10 @@
   text-shadow: none;
   font-size: 65px;
   font-weight: normal;
+  position: absolute;
+  right: 30px;
+  z-index: 9999;
+  top: 45px;
 }
 
 .close:not(:disabled):not(.disabled):hover {

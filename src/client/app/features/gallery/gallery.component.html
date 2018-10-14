@@ -34,7 +34,7 @@
               <div *ngFor="let image of GalleryImageList[selection]; let i = index" class="carousel-item"
                    [ngClass]="{'active': i == 0}">
                 <img class="d-block w-100" [src]="image[0]" alt="">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                   <div class="carousel-text">
                     <h5>{{selection}} cake</h5>
                     <p>{{image[1]}}</p>
