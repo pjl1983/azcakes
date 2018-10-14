@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GalleryImageList } from './gallery-image-list';
+
+declare var $: any;
 
 
 @Component({
@@ -8,14 +10,10 @@ import { GalleryImageList } from './gallery-image-list';
   styleUrls: ['./gallery.component.css']
 })
 
-export class GalleryComponent implements OnInit {
-  selection: string;
+export class GalleryComponent {
   GalleryImageList = GalleryImageList;
+  selection: string;
 
   constructor() {
-  }
-
-  ngOnInit() {
-
   }
 }
