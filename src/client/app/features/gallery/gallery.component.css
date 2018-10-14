@@ -40,6 +40,12 @@
   border-bottom: none;
 }
 
+.carousel-inner-image {
+  max-height: 75vh;
+  min-height: 75vh;
+  object-fit: cover;
+}
+
 .close {
   color: #ffffff;
   text-shadow: none;
