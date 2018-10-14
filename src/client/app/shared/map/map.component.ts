@@ -14,7 +14,7 @@ export class MapComponent implements OnInit {
   ngOnInit() {
     const azCakes = {lat: 33.7624752, lng: -111.9576749};
     const map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 16, center: azCakes, styles: [
+      document.getElementById('map'), {zoom: 14, center: azCakes, styles: [
           {
             'elementType': 'geometry',
             'stylers': [
