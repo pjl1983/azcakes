@@ -27,16 +27,11 @@
         </div>
         <div class="modal-body">
           <div id="carouselIndicators" class="carousel slide" data-ride="false" data-wrap="false">
-            <ol class="carousel-indicators">
-              <li *ngFor="let image of GalleryImageList[selection]; let i = index" data-target="#carouselIndicators"
-                  data-slide-to="i" [ngClass]="{'active': i == 0}"></li>
-            </ol>
             <div class="carousel-inner">
               <div *ngFor="let image of GalleryImageList[selection]; let i = index" [ngClass]="{'active': i == 0}"
                    class="carousel-item">
                 <img class="d-block w-100 carousel-inner-image" [src]="image[0]" alt="">
                 <div class="carousel-caption d-none d-block carousel-text">
-                  <h5>{{selection}}</h5>
                   <p>{{image[1]}}</p>
                 </div>
               </div>
