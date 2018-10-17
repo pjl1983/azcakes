@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GalleryImageList } from './gallery-image-list';
 
 declare var $: any;
@@ -10,10 +10,24 @@ declare var $: any;
   styleUrls: ['./gallery.component.css']
 })
 
-export class GalleryComponent {
+export class GalleryComponent implements OnInit {
   GalleryImageList = GalleryImageList;
   selection: string;
 
   constructor() {
+  }
+
+  ngOnInit() {
+    $(document).ready(function () {
+      $('#carouselIndicators').swipe({
+        swipe: (event, direction) => {
+          if (direction === 'right') {
+            $('.carousel').carousel('prev');
+          } else if (direction === 'left') {
+            $('.carousel').carousel('next');
+          }
+        }
+      });
+    });
   }
 }
