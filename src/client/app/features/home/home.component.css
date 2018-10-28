@@ -76,7 +76,6 @@ blockquote {
     height: 50vh;
     width: auto;
     object-fit: cover;
-    object-position: 0 0;
   }
 
   .quote-text {
@@ -103,6 +102,5 @@ blockquote {
     height: 50vh;
     width: auto;
     object-fit: cover;
-    object-position: 0 0;
   }
 }
