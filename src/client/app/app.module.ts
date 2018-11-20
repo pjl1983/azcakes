@@ -11,6 +11,7 @@ import { ContactModule } from './features/contact/contact.module';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { GalleryModule } from './features/gallery/gallery.module';
+import { AboutModule } from './features/about/about.module';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { GalleryModule } from './features/gallery/gallery.module';
     HomeModule,
     OrderingInformationModule,
     GalleryModule,
+    AboutModule,
     ContactModule,
     SharedModule,
     ScrollToModule.forRoot(),

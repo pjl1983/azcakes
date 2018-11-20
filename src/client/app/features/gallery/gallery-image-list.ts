@@ -25,10 +25,11 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/bridal-and-baby/baby_booties.jpeg', 'Baby booties'],
     ['./../../../client/assets/photos/cakes/bridal-and-baby/baby_carriage_pink_and_grey.jpeg', 'Baby carriage pink and grey'],
     ['./../../../client/assets/photos/cakes/bridal-and-baby/baby_crib.jpeg', 'Baby crib'],
-    ['./../../../client/assets/photos/cakes/bridal-and-baby/black_and_white_pink_safari.jpeg', 'Black and whie pink safari'],
+    ['./../../../client/assets/photos/cakes/bridal-and-baby/black_and_white_pink_safari.jpeg', 'Black and white pink safari'],
     ['./../../../client/assets/photos/cakes/bridal-and-baby/louis_vuitton_diaper_bag.jpeg', 'Louis Vuitton diaper bag'],
     ['./../../../client/assets/photos/cakes/bridal-and-baby/owl_baby.jpeg', 'Owl baby'],
-    ['./../../../client/assets/photos/cakes/bridal-and-baby/safari_baby.jpeg', 'Safari baby']
+    ['./../../../client/assets/photos/cakes/bridal-and-baby/safari_baby.jpeg', 'Safari baby'],
+    ['./../../../client/assets/photos/cakes/bridal-and-baby/tee_pee_and_feathers.jpeg', 'Tee pee & feathers'],
   ],
   'sports': [
     ['./../../../client/assets/photos/cakes/sports/golf_ball.jpeg', 'Golf ball'],
@@ -38,6 +39,7 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/sports/fishing_tackle_basket.jpeg', 'Fishing tackle basket'],
     ['./../../../client/assets/photos/cakes/sports/football.jpg', 'Football'],
     ['./../../../client/assets/photos/cakes/sports/golf_hat.jpeg', 'Golf hat'],
+    ['./../../../client/assets/photos/cakes/sports/golf_ball_and golf_chip.jpeg', 'Golf ball & golf chip'],
     ['./../../../client/assets/photos/cakes/sports/hockey_skate.jpeg', 'Hockey skate'],
     ['./../../../client/assets/photos/cakes/sports/soccer_ball.jpeg', 'Soccer ball']
   ],
@@ -53,18 +55,23 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/birthday-girl/minnie_mouse_ears_hat_and_minnie_bow.jpeg', 'Minnie Mouse ears, hand and Minnie bow'],
     ['./../../../client/assets/photos/cakes/birthday-boy/pizza_and_box.jpeg', 'Pizza and box'],
     ['./../../../client/assets/photos/cakes/birthday-girl/present_with_edible_bow.jpeg', 'Present with edible bow'],
-    ['./../../../client/assets/photos/cakes/birthday-boy/play_station_4.jpeg', 'Play Station 4'],
     ['./../../../client/assets/photos/cakes/birthday-boy/rattlesnake.jpeg', 'Rattlesnake'],
     ['./../../../client/assets/photos/cakes/birthday-girl/princess_pillow_and_crown.jpeg', 'Princess pillow and crown'],
-    ['./../../../client/assets/photos/cakes/birthday-boy/safari.jpeg', 'Safari'],
     ['./../../../client/assets/photos/cakes/birthday-girl/under_the_sea_shell.jpeg', 'Under the seashell'],
     ['./../../../client/assets/photos/cakes/birthday-boy/spider_man.jpeg', 'Spider-man'],
     ['./../../../client/assets/photos/cakes/birthday-boy/star_wars.jpeg', 'Star Wars'],
-    ['./../../../client/assets/photos/cakes/birthday-boy/superhero.jpeg', 'Super hero']
-  ],
-  'graduation': [
     ['./../../../client/assets/photos/cakes/graduation/books_and_graduation_cap.jpeg', 'Books and graduation cap'],
-    ['./../../../client/assets/photos/cakes/graduation/graduation_cap.jpeg', 'Graduation cap']
+    ['./../../../client/assets/photos/cakes/birthday-girl/princess_theme.jpeg', 'Princess themed'],
+    ['./../../../client/assets/photos/cakes/graduation/graduation_cap.jpeg', 'Graduation cap'],
+    ['./../../../client/assets/photos/cakes/birthday-boy/dinosaur.jpeg', 'Dinosaur']
+  ],
+  'sculpted': [
+    ['./../../../client/assets/photos/cakes/sculpted/pancakes.JPG', 'Pancakes'],
+    ['./../../../client/assets/photos/cakes/sculpted/candy_corn.JPG', 'Candy corn'],
+    ['./../../../client/assets/photos/cakes/sculpted/ice_cream_bar.JPG', 'Ice cream bar'],
+    ['./../../../client/assets/photos/cakes/sculpted/pizza_and_pizza_boxes.JPG', 'Pizza & pizza boxes'],
+    ['./../../../client/assets/photos/cakes/sculpted/spaghetti_and_meatballs.jpg', 'Spaghetti & meatballs'],
+    ['./../../../client/assets/photos/cakes/sculpted/thanksgiving_turkey.jpeg', 'Thanksgiving turkey']
   ],
   'cupcakes': [
     ['./../../../client/assets/photos/cakes/cupcakes/image_1.jpeg', ''],
@@ -73,7 +80,10 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/cupcakes/image_4.jpeg', ''],
     ['./../../../client/assets/photos/cakes/cupcakes/image_5.jpeg', ''],
     ['./../../../client/assets/photos/cakes/cupcakes/image_6.jpeg', ''],
-    ['./../../../client/assets/photos/cakes/cupcakes/image_7.jpeg', '']
+    ['./../../../client/assets/photos/cakes/cupcakes/image_7.jpeg', ''],
+    ['./../../../client/assets/photos/cakes/cupcakes/image_8.jpeg', ''],
+    ['./../../../client/assets/photos/cakes/cupcakes/image_9.jpeg', ''],
+    ['./../../../client/assets/photos/cakes/cupcakes/image_10.jpeg', '']
   ]
 };
 

@@ -1,3 +1,9 @@
+section {
+  background: url("/../../../client/assets/photos/site/IMG_8966_2.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 0 !important;
+}
+
 #order-info {
   padding-top: 50px;
   padding-bottom: 75px;
@@ -5,10 +11,18 @@
 
 .image {
   width: 100%;
- }
+}
 
 section {
   margin-bottom: 25px;
+}
+
+.title {
+  background-color: transparent;
+}
+
+.title_container {
+  border-bottom: none;
 }
 
 @media screen and (max-width: 575px) {

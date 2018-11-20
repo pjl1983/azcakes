@@ -40,14 +40,18 @@
         <a class="nav-link" routerLink="/gallery" (click)="toggle = !toggle">Image Gallery</a>
       </li>
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : url === '/about'}">
+        <a class="nav-link" routerLink="/about" (click)="toggle = !toggle">About Me</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
           [ngClass]="{'active' : url === '/contact'}">
         <a class="nav-link" routerLink="/contact" (click)="toggle = !toggle">Contact</a>
       </li>
     </ul>
     <span class="navbar-text">
       <div class="contact_info text-muted">
-        Mon-Fri 9am to 5pm<br>
-        480.502.7646
+        Serving Arizona Cake Since 2001<br>
+        By Appointment only 480.502.7646
       </div>
     </span>
   </div>

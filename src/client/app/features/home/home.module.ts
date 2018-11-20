@@ -5,7 +5,6 @@ import { FlavorsModule } from '../flavors/flavors.module';
 import { PaymentModule } from '../payment/payment.module';
 import { MapModule } from '../../shared/map/map.module';
 
-
 @NgModule({
   imports: [
     FlavorsModule,
@@ -21,5 +20,6 @@ import { MapModule } from '../../shared/map/map.module';
     MapModule
   ]
 })
+
 export class HomeModule {
 }
