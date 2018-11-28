@@ -1,0 +1,40 @@
+.container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.square {
+  height: 300px;
+  width: 100%;
+}
+
+.logo {
+  background-image: url('/../../../client/assets/logos/logo_name_pink.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.elizabeth {
+  background-image: url('/../../../client/assets/photos/site/elizabeth.jpeg');
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parents {
+  background-image: url('/../../../client/assets/photos/site/parents.jpeg');
+  background-size: cover;
+  background-position-x: center;
+}
+
+@media (min-width: 768px) {
+  .square {
+    height: 300px;
+    width: 300px;
+  }
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

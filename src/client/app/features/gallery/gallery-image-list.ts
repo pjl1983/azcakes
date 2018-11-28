@@ -53,7 +53,6 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/birthday-girl/gift_box_with_edible_bow.jpeg', 'Gift box with edible bow'],
     ['./../../../client/assets/photos/cakes/birthday-boy/monster.jpeg', 'Monseter'],
     ['./../../../client/assets/photos/cakes/birthday-girl/minnie_mouse_ears_hat_and_minnie_bow.jpeg', 'Minnie Mouse ears, hand and Minnie bow'],
-    ['./../../../client/assets/photos/cakes/birthday-boy/pizza_and_box.jpeg', 'Pizza and box'],
     ['./../../../client/assets/photos/cakes/birthday-girl/present_with_edible_bow.jpeg', 'Present with edible bow'],
     ['./../../../client/assets/photos/cakes/birthday-boy/rattlesnake.jpeg', 'Rattlesnake'],
     ['./../../../client/assets/photos/cakes/birthday-girl/princess_pillow_and_crown.jpeg', 'Princess pillow and crown'],
