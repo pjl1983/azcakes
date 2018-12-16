@@ -1,11 +1,63 @@
 #payment {
-  padding: 75px 0;
-  background-color: #343a40;
+  background-color: #ffffff;
   color: #dee2e6;
+  max-height: 500px;
+  overflow: hidden;
+  border-bottom: solid 1px;
+  padding-top: 50px;
 }
 
-@media screen and (max-width: 575px) {
+#paypal-button {
+  padding-top: 5px;
+}
+
+.input-group {
+  bottom: 3px;
+  height: 45px;
+}
+
+.input-group-text {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.form-control {
+  height: 45px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+img {
+  height: 100%;
+  width: 85%;
+  margin-left: 100px;
+}
+
+.payment-section {
+  padding-bottom: 50px;
+  color: #343a40;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
   #payment {
-    padding-top: 50px;
+    padding-top: 0;
+  }
+
+  .payment-section {
+    padding-top: 135px;
+    color: #343a40;
   }
 }
+

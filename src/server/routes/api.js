@@ -1,53 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const moment = require('moment');
-const braintree = require('braintree');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID);
-
-// router.get('/paypal/generateToken', (req, res) => {
-//   const gateway = braintree.connect({
-//     accessToken: process.env.PAYPAL_ACCESS_TOKEN
-//   });
-//
-//   gateway.clientToken.generate({}, (err, response) => {
-//     if (!err) {
-//       res.json(response);
-//     } else {
-//       console.log(err);
-//       res.status(500).send('PayPal token generation error.');
-//     }
-//   });
-// });
-//
-// router.post('/paypal/pay', (req, res) => {
-//   const gateway = braintree.connect({
-//     accessToken: process.env.PAYPAL_ACCESS_TOKEN
-//   });
-//
-//   gateway.transaction.sale({
-//     amount: req.body.amount,
-//     paymentMethodNonce: req.body.paymentMethodNonce,
-//     orderId: req.body.orderId,
-//     descriptor: {
-//       name: req.body.descriptor.name
-//     },
-//     options: {
-//       paypal: {
-//         customField: 'Thank you for your order.',
-//         description: 'Your PayPal receipt from AZ Cakes by Elizabeth.'
-//       },
-//       submitForSettlement: true
-//     }
-//   }, (err, result) => {
-//     if (!err) {
-//       res.json(result);
-//     } else {
-//       console.log(err);
-//       res.status(500).send('PayPal payment submission error.');
-//     }
-//   });
-// });
 
 router.post('/contact', (req, res) => {
   const contact = req.body.contact;
