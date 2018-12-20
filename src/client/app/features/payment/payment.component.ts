@@ -51,7 +51,9 @@ export class PaymentComponent implements AfterViewChecked {
       });
     },
     onAuthorize: (data, actions) => {
-      return actions.payment.execute();
+      return actions.payment.execute().then(() => {
+        alert("Thank you for your purchase!");
+      });
     }
   };
 
