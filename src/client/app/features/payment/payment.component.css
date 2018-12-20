@@ -4,7 +4,7 @@
   max-height: 500px;
   overflow: hidden;
   border-bottom: solid 1px;
-  padding-top: 50px;
+  border-top: solid 1px;
 }
 
 #paypal-button {
@@ -17,31 +17,72 @@
 }
 
 .input-group-text {
-  color: #000000;
   background-color: #ffffff;
-  border: 1px solid #000000;
 }
 
 .form-control {
   height: 45px;
-  color: #000000;
   background-color: #ffffff;
-  border: 1px solid #000000;
 }
 
 .form-control:focus {
   box-shadow: none;
 }
 
+a:hover {
+  color: #212529 !important;
+}
+
+.disabled-button {
+  cursor: no-drop;
+}
+
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
-  height: 100%;
-  width: 85%;
-  margin-left: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hide {
+  display: none;
+  position: relative;
+}
+
+.show {
+  -webkit-animation-name: animate;
+  position: relative;
+  -webkit-animation-duration: 800ms;
+  animation-name: animate;
+  animation-duration: 800ms;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .payment-section {
+  padding-top: 25px;
   padding-bottom: 50px;
-  color: #343a40;
+  color: #ffffff;
+  background-color: #73c3b4;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -56,8 +97,8 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .payment-section {
-    padding-top: 135px;
-    color: #343a40;
+    padding-top: 95px;
+    color: #ffffff;
   }
 }
 

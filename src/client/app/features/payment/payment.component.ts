@@ -13,6 +13,7 @@ export class PaymentComponent implements AfterViewChecked {
   addScript: boolean = false;
   amount: number;
   invalid: boolean = false;
+  display: number = 0;
 
   verify() {
     const regex = /^[1-9]\d*$/g;
@@ -29,8 +30,8 @@ export class PaymentComponent implements AfterViewChecked {
     },
     style: {
       size: 'responsive',
-      color: 'white',
-      shape: 'rect',
+      color: 'gold',
+      shape: 'pill',
       label: 'pay',
       tagline: 'false',
       layout: 'horizontal',
