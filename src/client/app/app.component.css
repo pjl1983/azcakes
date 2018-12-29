@@ -1,3 +1,8 @@
 .router-container {
-  padding-top: 70px;
+  padding-top: 106px;
+}
+
+#app {
+  max-width: 100vw;
+  overflow: hidden;
 }
