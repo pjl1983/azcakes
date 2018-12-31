@@ -1,9 +1,9 @@
 export const GalleryImageList = {
   'wedding': [
     ['./../../../client/assets/photos/cakes/wedding/buttercream_wedding.jpg', 'Buttercream wedding cake'],
-    ['./../../../client/assets/photos/cakes/wedding/batman.jpg', 'Batman'],
+    ['./../../../client/assets/photos/cakes/wedding/batman.JPG', 'Batman'],
     ['./../../../client/assets/photos/cakes/wedding/birch_tree.jpg', 'Birch tree'],
-    ['./../../../client/assets/photos/cakes/wedding/bronze_copper_and_marble.jpg', 'Bronze, copper and marble'],
+    ['./../../../client/assets/photos/cakes/wedding/bronze_copper_and_marble.JPG', 'Bronze, copper and marble'],
     ['./../../../client/assets/photos/cakes/wedding/buttercream_contour.jpg', 'Buttercream contour'],
     ['./../../../client/assets/photos/cakes/wedding/gift_box_pearlized.jpg', 'Pearlized gift box'],
     ['./../../../client/assets/photos/cakes/wedding/gold_quilted_rosette.jpg', 'Gold quilted rosette'],
