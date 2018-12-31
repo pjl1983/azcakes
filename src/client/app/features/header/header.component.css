@@ -3,9 +3,10 @@
   text-transform: uppercase;
   background-color: #73c3b4;
   border: 1px solid #73c3b4;
-  padding: 5px;
   color: #ffffff;
   width: 100%;
+  padding: 8px;
+  font-size: 9px;
 }
 
 .nav-links {
@@ -79,7 +80,8 @@
 }
 
 .contact_info {
-  text-align: right;
+  text-align: left;
+  margin-top: 20px;
   font-size: 12px;
 }
 
@@ -88,10 +90,23 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 575px) {
+@media (min-width: 576px) {
   .contact_info {
-    text-align: left;
-    margin-top: 20px;
+    text-align: right;
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .banner {
+    padding: 8px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding: 5px;
+    font-size: 16px;
   }
 }
 
