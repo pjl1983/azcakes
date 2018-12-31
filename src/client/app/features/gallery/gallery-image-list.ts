@@ -64,10 +64,10 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/birthday-girl/rainbow.jpg', 'Rainbow']
   ],
   'sculpted': [
-    ['./../../../client/assets/photos/cakes/sculpted/pancakes.jpg', 'Pancakes'],
-    ['./../../../client/assets/photos/cakes/sculpted/candy_corn.jpg', 'Candy corn'],
-    ['./../../../client/assets/photos/cakes/sculpted/ice_cream_bar.jpg', 'Ice cream bar'],
-    ['./../../../client/assets/photos/cakes/sculpted/pizza_and_pizza_boxes.jpg', 'Pizza & pizza boxes'],
+    ['./../../../client/assets/photos/cakes/sculpted/pancakes.JPG', 'Pancakes'],
+    ['./../../../client/assets/photos/cakes/sculpted/candy_corn.JPG', 'Candy corn'],
+    ['./../../../client/assets/photos/cakes/sculpted/ice_cream_bar.JPG', 'Ice cream bar'],
+    ['./../../../client/assets/photos/cakes/sculpted/pizza_and_pizza_boxes.JPG', 'Pizza & pizza boxes'],
     ['./../../../client/assets/photos/cakes/sculpted/spaghetti_and_meatballs.jpg', 'Spaghetti & meatballs'],
     ['./../../../client/assets/photos/cakes/sculpted/turkey.jpg', 'Thanksgiving turkey'],
     ['./../../../client/assets/photos/cakes/sculpted/western_cowboy_boot.jpg', 'Western cowboy boot'],
