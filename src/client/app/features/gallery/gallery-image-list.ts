@@ -47,7 +47,6 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/birthday-girl/princess_heart_with_matching_smash.jpg', 'Princess heart with matching smash'],
     ['./../../../client/assets/photos/cakes/birthday-boy/black_and_white_gift_box.jpg', 'Black and white gift box'],
     ['./../../../client/assets/photos/cakes/birthday-girl/chanel_purse.jpg', 'Chanel purse'],
-    ['./../../../client/assets/photos/cakes/birthday-boy/candy_corn.jpg', 'Candy corn'],
     ['./../../../client/assets/photos/cakes/birthday-girl/disney_princess_castle.jpg', 'Disney princess castle'],
     ['./../../../client/assets/photos/cakes/birthday-boy/electric_guitar.jpg', 'Electric guitar'],
     ['./../../../client/assets/photos/cakes/birthday-girl/gift_box_with_edible_bow.jpg', 'Gift box with edible bow'],
