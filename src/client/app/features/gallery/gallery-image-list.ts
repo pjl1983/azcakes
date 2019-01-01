@@ -64,7 +64,7 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/birthday-girl/rainbow.jpg', 'Rainbow']
   ],
   'sculpted': [
-    ['./../../../client/assets/photos/cakes/sculpted/pancakes.jpg', 'Pancakes'],
+    ['./../../../client/assets/photos/cakes/sculpted/pancakes.JPG', 'Pancakes'],
     ['./../../../client/assets/photos/cakes/sculpted/candy_corn.JPG', 'Candy corn'],
     ['./../../../client/assets/photos/cakes/sculpted/ice_cream_bar.JPG', 'Ice cream bar'],
     ['./../../../client/assets/photos/cakes/sculpted/pizza_and_pizza_boxes.JPG', 'Pizza & pizza boxes'],
