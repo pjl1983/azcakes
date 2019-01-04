@@ -4,9 +4,7 @@ import { GalleryImageList } from './gallery-image-list';
 import { NavigationStart } from '@angular/router';
 import 'rxjs/operators';
 
-
 declare var $: any;
-
 
 @Component({
   selector: 'app-gallery',
@@ -16,6 +14,7 @@ declare var $: any;
 
 export class GalleryComponent implements OnInit {
   GalleryImageList = GalleryImageList;
+  selection: string;
 
   constructor(private router: Router) {
   }
