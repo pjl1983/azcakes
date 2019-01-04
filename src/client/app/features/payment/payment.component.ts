@@ -1,5 +1,6 @@
-import { AfterViewChecked, Component } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { environment } from './../../../../environments/environment';
+
 
 declare let paypal: any;
 
@@ -14,6 +15,10 @@ export class PaymentComponent implements AfterViewChecked {
   amount: number;
   invalid: boolean = false;
   display: number = 0;
+
+  constructor(private renderer: Renderer2, private el: ElementRef) {
+  }
+
 
   verify() {
     const regex = /^[1-9]\d*$/g;
@@ -52,7 +57,7 @@ export class PaymentComponent implements AfterViewChecked {
     },
     onAuthorize: (data, actions) => {
       return actions.payment.execute().then(() => {
-        alert("Thank you for your purchase!");
+        alert('Thank you for your purchase!');
       });
     }
   };
@@ -68,10 +73,10 @@ export class PaymentComponent implements AfterViewChecked {
   addPaypalScript() {
     this.addScript = true;
     return new Promise((resolve, reject) => {
-      let scripttagElement = document.createElement('script');
-      scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
-      scripttagElement.onload = resolve;
-      document.body.appendChild(scripttagElement);
+      let scriptTagElement = this.renderer.createElement('script');
+      scriptTagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
+      this.renderer.appendChild(this.el.nativeElement, scriptTagElement);
+      scriptTagElement.onload = resolve;
     });
   }
 }

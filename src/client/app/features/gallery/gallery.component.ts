@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { GalleryImageList } from './gallery-image-list';
+import { NavigationStart } from '@angular/router';
+import 'rxjs/operators';
+
 
 declare var $: any;
 
@@ -12,9 +16,8 @@ declare var $: any;
 
 export class GalleryComponent implements OnInit {
   GalleryImageList = GalleryImageList;
-  selection: string;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -28,6 +31,12 @@ export class GalleryComponent implements OnInit {
           }
         }
       });
+    });
+
+    this.router.events.forEach((event) => {
+      if (event instanceof NavigationStart) {
+        $('#imageModal').modal('hide');
+      }
     });
   }
 }
