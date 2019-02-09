@@ -12,6 +12,7 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { GalleryModule } from './features/gallery/gallery.module';
 import { AboutModule } from './features/about/about.module';
+import { Angulartics2Module } from 'angulartics2';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AboutModule } from './features/about/about.module';
     ContactModule,
     SharedModule,
     ScrollToModule.forRoot(),
-    FlatpickrModule.forRoot()
+    FlatpickrModule.forRoot(),
+    Angulartics2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
