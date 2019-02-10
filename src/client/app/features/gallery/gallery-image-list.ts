@@ -29,7 +29,7 @@ export const GalleryImageList = {
     ['./../../../client/assets/photos/cakes/bridal-and-baby/louis_vuitton_diaper_bag.jpg', 'Louis Vuitton diaper bag'],
     ['./../../../client/assets/photos/cakes/bridal-and-baby/owl_baby.jpg', 'Owl baby'],
     ['./../../../client/assets/photos/cakes/bridal-and-baby/safari_baby.jpg', 'Safari baby'],
-    ['./../../../client/assets/photos/cakes/bridal-and-baby/tee_pee_and_feathers.jpg', 'Tee pee & feathers'],
+    ['./../../../client/assets/photos/cakes/bridal-and-baby/tee_pee_and_feathers.jpg', 'Tepee & feathers'],
   ],
   'sports': [
     ['./../../../client/assets/photos/cakes/sports/golf_ball.jpg', 'Golf ball'],
