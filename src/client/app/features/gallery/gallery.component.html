@@ -10,7 +10,7 @@
            data-gallery="wedding-gallery"
            (click)="selection = key"
            class="image_container mb-3 animated slow" data="fadeIn">
-        <img class="gallery_image" [src]="GalleryImageList[key][0][0]">
+        <img class="gallery_image" [alt]="GalleryImageList[key][0][0]" [src]="GalleryImageList[key][0][0]">
         <span class="image_title">{{key}}</span>
       </div>
     </div>
@@ -30,7 +30,7 @@
             <div class="carousel-inner">
               <div *ngFor="let image of GalleryImageList[selection]; let i = index" [ngClass]="{'active': i == 0}"
                    class="carousel-item">
-                <img class="d-block w-100 carousel-inner-image" [src]="image[0]" alt="">
+                <img class="d-block w-100 carousel-inner-image" [alt]="image[0]" [src]="image[0]">
                 <div class="carousel-caption d-none d-block carousel-text">
                   <p>{{image[1]}}</p>
                 </div>
