@@ -5,13 +5,14 @@ const http = require('http');
 const app = express();
 const api = require('./src/server/routes/api');
 
+process.env.NODE_ENV = 'production';
+
 // Parsers
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Angular DIST output folder
 app.use(express.static(path.join(__dirname, 'dist/cake-app')));
-
 
 // API location
 app.use('/api', api);
