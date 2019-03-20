@@ -13,6 +13,9 @@
     "gzipper": "gzipper",
     "postinstall": "ng build --prod && gzipper --verbose --brotli ./dist"
   },
+  "engines": {
+    "node": "11.12.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
