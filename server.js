@@ -4,8 +4,10 @@ const path = require('path');
 const http = require('http');
 const app = express();
 const api = require('./src/server/routes/api');
-
+const compression = require('compression');
 process.env.NODE_ENV = 'production';
+
+app.use(compression());
 
 // Parsers
 app.use(bodyParser.json());
