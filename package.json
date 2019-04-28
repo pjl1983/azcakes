@@ -10,8 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gzipper": "gzipper",
-    "postinstall": "ng build --prod --configuration=production && gzipper --verbose --brotli ./dist"
+    "gzipper": "gzipper"
   },
   "engines": {
     "node": "11.12.0"
