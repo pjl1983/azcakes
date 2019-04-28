@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, isDevMode } from '@angular/core';
 import { Angulartics2GoogleTagManager } from 'angulartics2/gtm';
 
 @Component({
@@ -12,5 +12,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (isDevMode()) {
+      console.log('Development!');
+    } else {
+      console.log('Production!');
+    }
   }
 }

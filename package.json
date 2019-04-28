@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gzipper": "gzipper",
-    "postinstall": "ng build --prod && gzipper --verbose --brotli ./dist"
+    "postinstall": "ng build --prod --configuration=production && gzipper --verbose --brotli ./dist"
   },
   "engines": {
     "node": "11.12.0"
