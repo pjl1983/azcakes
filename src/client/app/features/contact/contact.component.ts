@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ContactModel } from '../../core/models/contact.model';
-import { ContactService } from '../../core/services/contact.service';
-import { environment } from '../../../../environments/environment';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ContactModel} from '../../core/models/contact.model';
+import {ContactService} from '../../core/services/contact.service';
+import {environment} from '../../../../environments/environment';
 
 
 @Component({
@@ -35,9 +35,14 @@ export class ContactComponent implements OnInit {
   }
 
   submit(contact: ContactModel) {
-    this.contactService.submitContactInfo(contact).subscribe(res => {
-      console.log(res);
-    });
+    this.contactService.submitContactInfo(contact).subscribe((res) => {
+        window.alert('Message sent successfully.');
+        this.contact.reset();
+      },
+      error => {
+        console.log('An error has been encountered while submitting your contact request. Please try again.');
+      }
+    );
   }
 
   handleExpire() {

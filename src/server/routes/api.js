@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const moment = require('moment');
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID);
+const sgMail = require('@sendgrid/mail').setApiKey(process.env.SENDGRID);
+
 
 router.post('/contact', (req, res) => {
   const contact = req.body.contact;
@@ -254,7 +254,10 @@ router.post('/contact', (req, res) => {
 
   sgMail.send(msg, (error) => {
     if (!error) {
-      res.status(200).send('Success!');
+      res.status(200).send(msg);
+    } else {
+      console.log(error);
+      res.status(500).send(error);
     }
   });
 });
