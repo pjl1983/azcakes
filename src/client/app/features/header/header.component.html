@@ -22,7 +22,7 @@
           [ngClass]="{'active' : section === '/flavors' && home}">
         <a class="nav-link" routerLink="/home" (click)="section = 'flavors'; toggle = !toggle"
            [ngx-scroll-to]="'#flavors'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-           [ngx-scroll-to-duration]="1500">
+           [ngx-scroll-to-duration]="1500" [ngx-scroll-to-offset]="-100">
           Flavors
         </a>
       </li>
@@ -32,7 +32,7 @@
           [ngClass]="{'active' : section === '/gallery' && home}">
         <a class="nav-link" routerLink="/home" (click)="section = 'gallery'; toggle = !toggle"
            [ngx-scroll-to]="'#gallery'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-           [ngx-scroll-to-duration]="1500">
+           [ngx-scroll-to-duration]="1500" [ngx-scroll-to-offset]="-100">
           Gallery
         </a>
       </li>
@@ -42,7 +42,7 @@
           [ngClass]="{'active' : section === '/payment' && home}">
         <a class="nav-link" routerLink="/home" (click)="section = 'payment'; toggle = !toggle"
            [ngx-scroll-to]="'#payment'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-           [ngx-scroll-to-duration]="1500">
+           [ngx-scroll-to-duration]="1500" [ngx-scroll-to-offset]="-100">
           Pay Online
         </a>
       </li>
@@ -52,7 +52,7 @@
           [ngClass]="{'active' : section === '/contact' && home}">
         <a class="nav-link" routerLink="/home" (click)="section = 'contact'; toggle = !toggle"
            [ngx-scroll-to]="'#contact'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-           [ngx-scroll-to-duration]="1500">
+           [ngx-scroll-to-duration]="1500" [ngx-scroll-to-offset]="-100">
           Contact
         </a>
       </li>
@@ -60,13 +60,13 @@
       <!-- Ordering -->
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
           [ngClass]="{'active' : url === '/order'}">
-        <a class="nav-link" routerLink="/order" (click)="toggle = !toggle">Ordering</a>
+        <a class="nav-link" routerLink="/order" (click)="toggle = !toggle" [ngx-scroll-to]="'#order-info'" [ngx-scroll-to-offset]="-100">Ordering</a>
       </li>
 
       <!-- About Me -->
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
           [ngClass]="{'active' : url === '/about'}">
-        <a class="nav-link" routerLink="/about" (click)="toggle = !toggle">About Me</a>
+        <a class="nav-link" routerLink="/about" (click)="toggle = !toggle" [ngx-scroll-to]="'#about'" [ngx-scroll-to-offset]="-100">About Me</a>
       </li>
     </ul>
 
