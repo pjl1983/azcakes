@@ -11,15 +11,18 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   url: string;
   toggle: boolean;
+  section: string;
+  home: boolean;
 
   constructor(private router: Router) {
   }
 
   ngOnInit() {
     this.router.events.pipe(
-      filter((event: Event) => event instanceof NavigationEnd)
+      filter((event: any) => event instanceof NavigationEnd)
     ).subscribe((route: any) => {
       this.url = route.url;
+      this.home = this.url === 'home';
     });
   }
 }

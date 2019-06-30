@@ -16,49 +16,69 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show"
-          [ngClass]="{'active' : url === '/home'}">
-        <a class="nav-link dropdown-toggle" (click)="toggle = !toggle" id="navbarDropdown" role="button"
-           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Home
+
+      <!-- flavors -->
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : section === '/flavors' && home}">
+        <a class="nav-link" routerLink="/home" (click)="section = 'flavors'; toggle = !toggle"
+           [ngx-scroll-to]="'#flavors'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+           [ngx-scroll-to-duration]="1500">
+          Flavors
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a routerLink="/home" [ngx-scroll-to]="'#app'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-             [ngx-scroll-to-duration]="1500" class="dropdown-item">
-            Main
-          </a>
-          <a routerLink="/home" [ngx-scroll-to]="'#flavors'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-             [ngx-scroll-to-duration]="1500" class="dropdown-item">
-            Flavors
-          </a>
-          <a routerLink="/home" [ngx-scroll-to]="'#payment'" [ngx-scroll-to-easing]="'easeInOutCubic'"
-             [ngx-scroll-to-duration]="1500" [ngx-scroll-to-offset]="-75" class="dropdown-item">
-            Pay Online
-          </a>
-        </div>
       </li>
 
+      <!-- Gallery -->
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : section === '/gallery' && home}">
+        <a class="nav-link" routerLink="/home" (click)="section = 'gallery'; toggle = !toggle"
+           [ngx-scroll-to]="'#gallery'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+           [ngx-scroll-to-duration]="1500">
+          Gallery
+        </a>
+      </li>
+
+      <!-- Payment -->
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : section === '/payment' && home}">
+        <a class="nav-link" routerLink="/home" (click)="section = 'payment'; toggle = !toggle"
+           [ngx-scroll-to]="'#payment'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+           [ngx-scroll-to-duration]="1500">
+          Pay Online
+        </a>
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
+          [ngClass]="{'active' : section === '/contact' && home}">
+        <a class="nav-link" routerLink="/home" (click)="section = 'contact'; toggle = !toggle"
+           [ngx-scroll-to]="'#contact'" [ngx-scroll-to-easing]="'easeInOutCubic'"
+           [ngx-scroll-to-duration]="1500">
+          Contact
+        </a>
+      </li>
+
+      <!-- Ordering -->
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
           [ngClass]="{'active' : url === '/order'}">
         <a class="nav-link" routerLink="/order" (click)="toggle = !toggle">Ordering</a>
       </li>
-      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
-          [ngClass]="{'active' : url === '/gallery'}">
-        <a class="nav-link" routerLink="/gallery" (click)="toggle = !toggle">Image Gallery</a>
-      </li>
+
+      <!-- About Me -->
       <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
           [ngClass]="{'active' : url === '/about'}">
         <a class="nav-link" routerLink="/about" (click)="toggle = !toggle">About Me</a>
       </li>
-      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"
-          [ngClass]="{'active' : url === '/contact'}">
-        <a class="nav-link" routerLink="/contact" (click)="toggle = !toggle">Contact</a>
-      </li>
     </ul>
-    <span class="navbar-text">
+
+    <div class="navbar-text">
       <div class="contact_info text-muted">
         By appointment only <b>480.502.7646</b>
       </div>
-    </span>
+      <div class="contact_info text-muted">
+        <a target="_blank" class="text-decoration-none text-muted" href="https://www.facebook.com/pages/AZ-Cakes-By-Elizabeth-llc/502518509786647">
+          <i class="fab fa-facebook-square"></i> Visit us on Facebook
+        </a>
+      </div>
+    </div>
   </div>
 </nav>

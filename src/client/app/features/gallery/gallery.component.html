@@ -1,52 +1,54 @@
-<div class="container" id="gallery" data-aos="fade-in" data-aos-duration="1000">
-  <div class="title_container">
-    <p class="title">Gallery</p>
-  </div>
+<section>
+  <div class="container" id="gallery" data-aos="fade-in" data-aos-duration="1000">
+    <div class="title_container">
+      <p class="title">Gallery</p>
+    </div>
 
-  <div class="row">
-    <div *ngFor="let key of GalleryImageList | keys" class="col-xs-12 col-sm-6 col-lg-4 text-center">
-      <div data-toggle="modal"
-           data-target="#imageModal"
-           data-gallery="wedding-gallery"
-           (click)="selection = key"
-           class="image_container mb-3 animated slow" data="fadeIn">
-        <img class="gallery_image" [alt]="GalleryImageList[key][0][0]" [src]="GalleryImageList[key][0][0]">
-        <span class="image_title">{{key}}</span>
+    <div class="row">
+      <div *ngFor="let key of GalleryImageList | keys" class="col-xs-12 col-sm-6 col-lg-4 text-center">
+        <div data-toggle="modal"
+             data-target="#imageModal"
+             data-gallery="wedding-gallery"
+             (click)="selection = key"
+             class="image_container mb-3 animated slow" data="fadeIn">
+          <img class="gallery_image" [alt]="GalleryImageList[key][0][0]" [src]="GalleryImageList[key][0][0]">
+          <span class="image_title">{{key}}</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-       aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div id="carouselIndicators" class="carousel slide" data-ride="false" data-wrap="false">
-            <div class="carousel-inner">
-              <div *ngFor="let image of GalleryImageList[selection]; let i = index" [ngClass]="{'active': i == 0}"
-                   class="carousel-item">
-                <img class="d-block w-100 carousel-inner-image" [alt]="image[0]" [src]="image[0]">
-                <div class="carousel-caption d-none d-block carousel-text">
-                  <p>{{image[1]}}</p>
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselIndicators" class="carousel slide" data-ride="false" data-wrap="false">
+              <div class="carousel-inner">
+                <div *ngFor="let image of GalleryImageList[selection]; let i = index" [ngClass]="{'active': i == 0}"
+                     class="carousel-item">
+                  <img class="d-block w-100 carousel-inner-image" [alt]="image[0]" [src]="image[0]">
+                  <div class="carousel-caption d-none d-block carousel-text">
+                    <p>{{image[1]}}</p>
+                  </div>
                 </div>
               </div>
+              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>

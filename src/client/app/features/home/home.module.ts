@@ -3,13 +3,15 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../../shared/shared.module';
 import { FlavorsModule } from '../flavors/flavors.module';
 import { PaymentModule } from '../payment/payment.module';
-import { MapModule } from '../../shared/map/map.module';
+import {ContactModule} from '../contact/contact.module';
+import {GalleryModule} from '../gallery/gallery.module';
 
 @NgModule({
   imports: [
     FlavorsModule,
     PaymentModule,
-    MapModule,
+    GalleryModule,
+    ContactModule,
     SharedModule
   ],
   declarations: [HomeComponent],
@@ -17,7 +19,8 @@ import { MapModule } from '../../shared/map/map.module';
     HomeComponent,
     FlavorsModule,
     PaymentModule,
-    MapModule
+    GalleryModule,
+    ContactModule
   ]
 })
 
