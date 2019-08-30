@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const moment = require('moment');
-const sgMail = require('@sendgrid/mail').setApiKey(process.env.SENDGRID);
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID);
 
 
 router.post('/contact', (req, res) => {
