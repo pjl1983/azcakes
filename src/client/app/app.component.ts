@@ -8,7 +8,8 @@ import { Angulartics2GoogleTagManager } from 'angulartics2/gtm';
 })
 
 export class AppComponent implements OnInit {
-  constructor(private angulartics2GoogleTagManager: Angulartics2GoogleTagManager,) {
+  constructor(private angulartics2GoogleTagManager: Angulartics2GoogleTagManager) {
+    angulartics2GoogleTagManager.startTracking();
   }
 
   ngOnInit() {
