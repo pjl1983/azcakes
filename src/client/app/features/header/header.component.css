@@ -93,6 +93,14 @@
   font-size: 12px;
 }
 
+.contact_info a {
+  font-size: 22px;
+}
+
+.contact_info a:hover {
+  color: #73c3b4 !important;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
