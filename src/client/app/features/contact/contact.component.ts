@@ -36,11 +36,11 @@ export class ContactComponent implements OnInit {
 
   submit(contact: ContactModel) {
     this.contactService.submitContactInfo(contact).subscribe((res) => {
-        window.alert('Message sent successfully.');
+        window.alert('Thank you!');
         this.contact.reset();
       },
       error => {
-        console.log('An error has been encountered while submitting your contact request. Please try again.');
+        window.alert('An error has been encountered while submitting your contact request. Please try again.');
       }
     );
   }
