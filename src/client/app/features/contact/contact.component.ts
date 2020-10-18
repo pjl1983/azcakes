@@ -4,6 +4,7 @@ import {ContactModel} from '../../core/models/contact.model';
 import {ContactService} from '../../core/services/contact.service';
 import {environment} from '../../../../environments/environment';
 
+declare var $: any;
 
 @Component({
   selector: 'app-contact',
@@ -35,12 +36,12 @@ export class ContactComponent implements OnInit {
   }
 
   submit(contact: ContactModel) {
-    this.contactService.submitContactInfo(contact).subscribe((res) => {
-        window.alert('Thank you!');
+    this.contactService.submitContactInfo(contact).subscribe(() => {
+        $('#successModal').modal();
         this.contact.reset();
       },
       error => {
-        window.alert('An error has been encountered while submitting your contact request. Please try again.');
+        $('#errorModal').modal();
       }
     );
   }

@@ -40,7 +40,6 @@ router.post('/contact', (req, res) => {
     "template_id": "d-405bd02550334f1c840e75c3ddd6feee"
   };
 
-
   sgMail.send(msg, (error) => {
     if (!error) {
       res.status(200).send(msg);
