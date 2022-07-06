@@ -41,7 +41,7 @@
     "express": "4.16.3",
     "flatpickr": "4.5.2",
     "gzipper": "2.2.0",
-    "moment": "2.22.2",
+    "moment": "2.29.4",
     "ngx-captcha": "5.0.3",
     "rxjs": "6.0.0",
     "string.prototype.endswith": "0.2.0",
