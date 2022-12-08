@@ -38,7 +38,7 @@
     "braintree-web": "3.31.0",
     "compression": "1.7.4",
     "core-js": "^2.6.9",
-    "express": "4.16.3",
+    "express": "4.17.3",
     "flatpickr": "4.5.2",
     "gzipper": "2.2.0",
     "moment": "2.22.2",
